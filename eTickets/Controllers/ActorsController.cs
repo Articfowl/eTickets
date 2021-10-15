@@ -28,7 +28,6 @@ namespace eTickets.Controllers
         {
             return View();
         }
-
         [HttpPost]
 
         public async Task<IActionResult> Create([Bind("FullName,ProfilePictureURL,Bio")]Actor actor)
@@ -41,7 +40,7 @@ namespace eTickets.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        //Get: ACtors/Details/1
+        //Get: Actors/Details/1
 
         public async Task<IActionResult> Details(int id)
         {
